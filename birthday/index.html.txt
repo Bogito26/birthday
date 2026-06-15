@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Babi ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(135deg,#ff758c,#ff7eb3);
+    color:white;
+    overflow-x:hidden;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero h1{
+    font-family:'Dancing Script',cursive;
+    font-size:4.5rem;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:1.2rem;
+    max-width:700px;
+}
+
+.btn{
+    margin-top:30px;
+    background:white;
+    color:#ff4d6d;
+    border:none;
+    padding:15px 30px;
+    border-radius:50px;
+    cursor:pointer;
+    font-size:18px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+}
+
+.section{
+    max-width:1100px;
+    margin:auto;
+    padding:80px 20px;
+}
+
+.title{
+    text-align:center;
+    font-size:2.5rem;
+    margin-bottom:40px;
+}
+
+.card{
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(10px);
+    padding:30px;
+    border-radius:20px;
+    line-height:1.9;
+    font-size:18px;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.gallery img{
+    width:100%;
+    height:320px;
+    object-fit:cover;
+    border-radius:20px;
+    transition:.3s;
+}
+
+.gallery img:hover{
+    transform:scale(1.05);
+}
+
+.counter{
+    text-align:center;
+    font-size:2rem;
+    font-weight:bold;
+}
+
+.song{
+    text-align:center;
+}
+
+.song a{
+    text-decoration:none;
+}
+
+.gift{
+    text-align:center;
+    font-size:120px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.gift:hover{
+    transform:scale(1.1);
+}
+
+.hidden{
+    display:none;
+}
+
+.final{
+    text-align:center;
+    padding:100px 20px;
+}
+
+.final h2{
+    font-size:4rem;
+    font-family:'Dancing Script',cursive;
+}
+
+.heart{
+    position:fixed;
+    color:white;
+    pointer-events:none;
+    animation:floatUp 5s linear forwards;
+}
+
+@keyframes floatUp{
+    from{
+        transform:translateY(0);
+        opacity:1;
+    }
+    to{
+        transform:translateY(-800px);
+        opacity:0;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+
+    <h1>Happy Birthday, Babi ❤️🎂</h1>
+
+    <p>
+        To Graziel Shen Bermido Garbo ❤️<br>
+        This website was made especially for you.
+    </p>
+
+    <button class="btn"
+    onclick="document.getElementById('letter').scrollIntoView()">
+        Open My Birthday Message ❤️
+    </button>
+
+</section>
+
+<!-- LETTER -->
+<section class="section" id="letter">
+
+    <h2 class="title">💌 A Message For You</h2>
+
+    <div class="card">
+
+        Dear Babi ❤️,
+
+        <br><br>
+
+        Happy Birthday, my love. 🎂❤️
+
+        Today is your special day, and I just want to remind you how grateful I am to have you in my life.
+
+        For the past four years, you've been my happiness, my comfort, and the person who always makes my days brighter. Thank you for all the memories we've shared, the laughter, the love, and the moments that made our relationship so special.
+
+        I may not always be perfect, but one thing I am sure of is how much I love you. You have been one of the best things that ever happened to me, and I will always cherish every moment we spend together.
+
+        On your birthday, I wish you good health, happiness, success, and all the things your heart desires. You deserve all the love and blessings in the world because of the wonderful person you are.
+
+        Thank you for staying by my side, for understanding me, and for loving me through everything.
+
+        Enjoy your day, Babi. Smile a lot, make wonderful memories, and never forget how loved you are.
+
+        <br><br>
+
+        Happy Birthday, Graziel Shen Bermido Garbo. ❤️🎂
+
+        <br><br>
+
+        I love you today, tomorrow, and always.
+
+        <br><br>
+
+        Love,<br>
+        Your Boyfriend,<br>
+        Bogito ❤️
+
+    </div>
+
+</section>
+
+<!-- PHOTOS -->
+<section class="section">
+
+    <h2 class="title">📸 Our Memories</h2>
+
+    <div class="gallery">
+
+        <img src="photos/photo1.jpg" alt="Memory 1">
+        <img src="photos/photo2.jpg" alt="Memory 2">
+        <img src="photos/photo3.jpg" alt="Memory 3">
+        <img src="photos/photo4.jpg" alt="Memory 4">
+
+    </div>
+
+</section>
+
+<!-- RELATIONSHIP COUNTER -->
+<section class="section">
+
+    <h2 class="title">❤️ Our Journey</h2>
+
+    <div class="counter" id="counter"></div>
+
+</section>
+
+<!-- SONG -->
+<section class="section">
+
+    <h2 class="title">🎵 Our Song</h2>
+
+    <div class="song">
+
+        <a href="https://www.youtube.com/results?search_query=Ed+Sheeran+Photograph"
+           target="_blank">
+
+            <button class="btn">
+                🎵 Photograph - Ed Sheeran
+            </button>
+
+        </a>
+
+    </div>
+
+</section>
+
+<!-- GIFT -->
+<section class="section">
+
+    <h2 class="title">🎁 Birthday Surprise</h2>
+
+    <div class="gift" onclick="openGift()">
+        🎁
+    </div>
+
+    <div id="giftMessage"
+         class="hidden"
+         style="text-align:center;font-size:24px;margin-top:20px;">
+
+        ❤️ Surprise! ❤️
+
+        <br><br>
+
+        Thank you for being part of my life.
+
+        <br>
+
+        You are my favorite person,
+        my happiness,
+        and one of the greatest blessings I have ever received.
+
+        ❤️
+
+    </div>
+
+</section>
+
+<!-- FINAL -->
+<section class="final">
+
+    <h2>Happy Birthday, Babi ❤️</h2>
+
+    <p style="font-size:22px;margin-top:20px;">
+        Because every day with you is my favorite day. ❤️
+    </p>
+
+    <button class="btn" onclick="showFinal()">
+        ❤️ One Last Surprise
+    </button>
+
+    <div id="finalMessage"
+         class="hidden"
+         style="font-size:24px;margin-top:30px;">
+
+        No matter where life takes us,
+        you'll always have a special place in my heart.
+
+        <br><br>
+
+        Happy Birthday, Babi. ❤️🎂
+
+        <br><br>
+
+        I Love You. ❤️
+
+    </div>
+
+</section>
+
+<script>
+
+// Anniversary Date
+const anniversary = new Date("2022-08-26");
+
+function updateCounter(){
+
+    const today = new Date();
+
+    const diff = today - anniversary;
+
+    const days = Math.floor(
+        diff / (1000 * 60 * 60 * 24)
+    );
+
+    document.getElementById("counter").innerHTML =
+        "❤️ We've shared " + days +
+        " beautiful days together ❤️";
+}
+
+updateCounter();
+
+function openGift(){
+    document.getElementById("giftMessage").style.display = "block";
+}
+
+function showFinal(){
+    document.getElementById("finalMessage").style.display = "block";
+}
+
+// Floating Hearts
+setInterval(()=>{
+
+    const heart = document.createElement("div");
+
+    heart.classList.add("heart");
+
+    heart.innerHTML = "❤️";
+
+    heart.style.left =
+        Math.random() * 100 + "vw";
+
+    heart.style.bottom = "0";
+
+    heart.style.fontSize =
+        (20 + Math.random() * 20) + "px";
+
+    document.body.appendChild(heart);
+
+    setTimeout(()=>{
+        heart.remove();
+    },5000);
+
+},300);
+
+</script>
+
+</body>
+</html>
